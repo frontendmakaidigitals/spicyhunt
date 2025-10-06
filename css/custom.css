@@ -5860,3 +5860,70 @@ header.main-header .header-sticky.active {
     height: 350px;
   }
 }
+
+/************************************/
+/***	 16. Menu Css    ***/
+/************************************/
+
+ .menu-btn-prev,
+.menu-btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.menu-btn-prev {
+  left: 0;
+}
+
+.menu-btn-next {
+  right: 0;
+}
+
+.menu-btn-prev:hover,
+.menu-btn-next:hover {
+  background-color: var(--accent-color);
+}
+
+.menu-btn-prev::before,
+.menu-btn-next::before {
+  font-family: "FontAwesome";
+  content: "\f053";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn .menu-btn-next::before {
+  transform: rotate(180deg);
+}
+
+.menu-btn-prev:hover::before,
+.menu-btn-next:hover::before {
+  color: var(--primary-color);
+}
+
+ 
+
+.menu-btn-prev.disabled,
+.menu-btn-next.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #ededed;
+   
+}
