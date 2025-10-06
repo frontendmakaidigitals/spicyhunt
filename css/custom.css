@@ -45,7 +45,7 @@
   --primary-color: #ffffff;
   --secondary-color: #1f2120;
   --text-color: #aeb0b4;
-  --accent-color: #E73C1B;
+  --accent-color: #e73c1b;
   --divider-color: #ffffff1a;
   --dark-divider-color: #0e110d;
   --error-color: rgb(230, 87, 87);
@@ -1283,10 +1283,10 @@ header.main-header .header-sticky.active {
   height: 100%;
   object-fit: contain;
 }
-.footer-email-item{
-	display: flex;
-	align-items: center;
-	gap: 12px;
+.footer-email-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /************************************/
@@ -2565,7 +2565,8 @@ header.main-header .header-sticky.active {
   position: absolute;
   left: -20px;
   top: 80px;
-  background: url(../images/burger-image.png) no-repeat;
+  background: url(../images/food-images/af6ce37f4958f91246efe0ce27a242c6.jpg)
+    no-repeat;
   background-position: left top;
   background-size: cover;
   transform: rotate(15deg);
@@ -2871,7 +2872,8 @@ header.main-header .header-sticky.active {
   position: absolute;
   right: -20px;
   top: 15%;
-  background: url(../images/burger-image.png) no-repeat;
+  background: url(../images/food-images/af6ce37f4958f91246efe0ce27a242c6.jpg)
+    no-repeat;
   background-position: right top;
   background-size: cover;
   transform: rotate(15deg);
@@ -2965,7 +2967,8 @@ header.main-header .header-sticky.active {
   position: absolute;
   left: -20px;
   top: 80px;
-  background: url(../images/burger-image.png) no-repeat;
+  background: url(../images/food-images/af6ce37f4958f91246efe0ce27a242c6.jpg)
+    no-repeat;
   background-position: left top;
   background-size: cover;
   transform: rotate(15deg);
