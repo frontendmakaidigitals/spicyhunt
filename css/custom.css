@@ -50,6 +50,8 @@
   --dark-divider-color: #0e110d;
   --error-color: rgb(230, 87, 87);
   --default-font: "Hanken Grotesk", serif;
+  --yellow-color:#FAE00D;
+
 }
 
 /************************************/
@@ -211,7 +213,7 @@ body {
   font-weight: 700;
   line-height: 1em;
   text-transform: capitalize;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--yellow-color);
   color: var(--primary-color);
   border-radius: 30px;
   padding: 17px 58px 17px 30px;
@@ -221,7 +223,7 @@ body {
 }
 
 .btn-outline:hover {
-  background: var(--accent-color);
+  background: var(--yellow-color);
   color: var(--dark-divider-color);
 }
 
@@ -273,25 +275,25 @@ body {
 }
 
 .btn-default.btn-highlighted {
-  background: var(--primary-color);
+  background: var(--yellow-color);
   color: var(--dark-divider-color);
 }
 
 .btn-default.btn-highlighted:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn-default.btn-highlighted::before {
-  background: var(--accent-color);
+  background: var(--primary-color);
 }
 
 .btn-default.btn-highlighted:after {
   background-image: url("../images/arrow-dark.svg");
 }
-
-.btn-default.btn-highlighted:hover:after {
-  filter: brightness(0) invert(1);
+.btn-default.btn-highlighted:after:hover{
+  filter: brightness(0) invert(0);
 }
+ 
 
 .readmore-btn {
   display: inline-block;
@@ -970,13 +972,13 @@ header.main-header .header-sticky.active {
 .about-us-image {
   position: relative;
   margin-right: 70px;
-  padding: 0 100px 0 60px;
+  padding: 0 10px 0 10px;
 }
 
 .about-us-img,
 .about-us-img figure {
   display: block;
-  border-radius: 999px;
+  border-radius: 1px;
   overflow: hidden;
 }
 
@@ -990,21 +992,20 @@ header.main-header .header-sticky.active {
   bottom: 0;
   left: 0;
   background: var(--secondary-color);
-  border-radius: 999px;
   opacity: 20%;
   z-index: 0;
 }
 
 .about-us-img img {
   width: 100%;
-  aspect-ratio: 1 / 1.53;
+  height: 560px;
   object-fit: cover;
-  border-radius: 999px;
+  border-radius: 50px;
 }
 
 .about-author-img {
   position: absolute;
-  bottom: 60px;
+  bottom: 50px;
   left: 0;
   z-index: 1;
 }
@@ -1335,8 +1336,8 @@ header.main-header .header-sticky.active {
 
 .daily-offer-img img {
   width: 100%;
-  aspect-ratio: 1 / 1.03;
-  object-fit: contain;
+  aspect-ratio: 1 / 1.05;
+  object-fit: cover;
 }
 
 .delicious-burger-box {
@@ -4285,7 +4286,12 @@ header.main-header .header-sticky.active {
   .slicknav_nav ul {
     display: block;
   }
-
+  .about-us-img img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
   .responsive-menu,
   .navbar-toggle {
     display: block;
@@ -4380,9 +4386,8 @@ header.main-header .header-sticky.active {
   }
 
   .about-us-image {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0 50px 0 40px;
+    width: 100%;
+
   }
 
   .company-experience {
@@ -4476,7 +4481,7 @@ header.main-header .header-sticky.active {
   }
 
   .delicious-burger-box {
-    width: 200px;
+    width: 205px;
     padding: 20px;
   }
 
@@ -5263,7 +5268,6 @@ header.main-header .header-sticky.active {
 
   .about-us-image {
     max-width: 100%;
-    padding: 0 40px 0 40px;
   }
 
   .company-experience {
@@ -5335,8 +5339,8 @@ header.main-header .header-sticky.active {
   }
 
   .delicious-burger-box {
-    width: 165px;
-    padding: 10px;
+    width: 205px;
+    padding: 14px;
   }
 
   .delicious-burger-title {
