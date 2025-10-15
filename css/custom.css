@@ -50,8 +50,7 @@
   --dark-divider-color: #0e110d;
   --error-color: rgb(230, 87, 87);
   --default-font: "Hanken Grotesk", serif;
-  --yellow-color:#FAE00D;
-
+  --yellow-color: #fae00d;
 }
 
 /************************************/
@@ -290,10 +289,9 @@ body {
 .btn-default.btn-highlighted:after {
   background-image: url("../images/arrow-dark.svg");
 }
-.btn-default.btn-highlighted:after:hover{
+.btn-default.btn-highlighted:after:hover {
   filter: brightness(0) invert(0);
 }
- 
 
 .readmore-btn {
   display: inline-block;
@@ -4387,7 +4385,6 @@ header.main-header .header-sticky.active {
 
   .about-us-image {
     width: 100%;
-
   }
 
   .company-experience {
@@ -6007,4 +6004,17 @@ header.main-header .header-sticky.active {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0
+}
+.hero-bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
