@@ -190,19 +190,23 @@ body {
 
 .btn-default {
   position: relative;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: capitalize;
   background: var(--accent-color);
   color: var(--primary-color);
   border-radius: 30px;
-  padding: 17px 58px 17px 30px;
   border: none;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   z-index: 1;
+  width: 190px;
+  padding: 10px 0px;
+  gap: 10px;
 }
 
 .btn-outline {
@@ -253,21 +257,6 @@ body {
   left: 0;
 }
 
-.btn-default::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 18px;
-  height: 14px;
-  background-image: url("../images/arrow-white.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  transform: translate(-30px, -50%);
-  transition: all 0.4s ease-in-out;
-}
-
 .btn-default:hover:after {
   filter: brightness(0) invert(0);
   transform: translate(-28px, -50%);
@@ -286,9 +275,6 @@ body {
   background: var(--primary-color);
 }
 
-.btn-default.btn-highlighted:after {
-  background-image: url("../images/arrow-dark.svg");
-}
 .btn-default.btn-highlighted:after:hover {
   filter: brightness(0) invert(0);
 }
@@ -6010,11 +5996,25 @@ header.main-header .header-sticky.active {
   width: 100%;
   height: 100%;
   position: absolute;
-  top:0;
-  left:0
+  top: 0;
+  left: 0;
 }
 .hero-bg-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.header-btn .btn-default img {
+  width: 50%;
+  filter: brightness(0) invert(1);
+}
+
+.header-btn .btn-default:hover img {
+  filter: brightness(0) invert(0.7);
+  transition: filter 0.3s ease;
+}
+
+.about-button {
+  margin-top:30px ;
 }
