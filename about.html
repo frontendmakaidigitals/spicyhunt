@@ -1211,10 +1211,12 @@
 
                   <div class="col-lg-12">
                     <div class="reserve-table-btn">
-                      <button type="submit" class="btn-default">
-                        reserve now
+                      <button type="submit" class="btn-default" id="reserveBtn">
+                        <span class="btn-text">Submit query</span>
+                        <span class="btn-loader" style="display: none">
+                          <i class="fa fa-spinner fa-spin"></i> Sending...
+                        </span>
                       </button>
-                      <div id="msgSubmit" class="h3 hidden"></div>
                     </div>
                   </div>
                 </div>
@@ -1226,7 +1228,7 @@
       </div>
     </div>
     <!-- Reserve Table Section End -->
-
+    <div id="toast"></div>
     <!-- Main Footer Section Start -->
     <footer class="main-footer">
       <div class="container">

@@ -577,36 +577,36 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      class="nav-link active"
+                      id="ricebowls-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#ricebowls"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      Rice Bowls
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link "
                       id="sides-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#sides"
                       type="button"
                       role="tab"
-                      aria-selected="false"
+                      aria-selected="true"
                     >
                       sides
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link active"
-                      id="appetizers-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#appetizers"
-                      type="button"
-                      role="tab"
-                      aria-selected="true"
-                    >
-                      Paninis
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
                       class="nav-link"
-                      id="maincourses-tab"
+                      id="rolls-Tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#maincourses"
+                      data-bs-target="#rolls"
                       type="button"
                       role="tab"
                       aria-selected="false"
@@ -618,14 +618,14 @@
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link"
-                      id="desserts-tab"
+                      id="chefspecial-tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#desserts"
+                      data-bs-target="#chefspecial"
                       type="button"
                       role="tab"
                       aria-selected="false"
                     >
-                      Bowls
+                      Chef's Special
                     </button>
                   </li>
                 </ul>
@@ -635,11 +635,7 @@
               <!-- Menu Box Start -->
               <div class="tab-content" id="myTabContent">
                 <!-- Menu Item Start -->
-                <div
-                  class="tab-pane fade show active"
-                  id="appetizers"
-                  role="tabpanel"
-                >
+                <div class="tab-pane fade show active" id="ricebowls" role="tabpanel">
                   <div class="row align-items-center">
                     <div class="col-lg-12">
                       <!-- Our Menu List Start -->
@@ -650,7 +646,7 @@
                           <div class="our-menu-image">
                             <figure>
                               <img
-                                src="images/food-images/ef0664312221d94199716f909c5429c0.jpg"
+                                src="images/food-images/62d899c849a9edcd74b8208794d92b83.jpg"
                                 alt=""
                               />
                             </figure>
@@ -661,17 +657,17 @@
                           <div class="menu-item-body">
                             <!-- Menu Item Title Start -->
                             <div class="menu-item-title">
-                              <h3>Chicken Tikka Melt</h3>
+                              <h3>Chicken Tikka</h3>
                               <hr />
-                              <span>$9.99</span>
+                              <span>$11.99</span>
                             </div>
                             <!-- Menu Item Title End -->
 
                             <!-- Menu Item Content Start -->
                             <div class="menu-item-content">
                               <p>
-                                Grilled panini filled with spiced chicken tikka,
-                                melty cheese, and tangy sauces.
+                                Grilled chicken served over fragrant rice with
+                                sauces and sides.
                               </p>
                             </div>
                             <!-- Menu Item Content End -->
@@ -686,7 +682,7 @@
                           <div class="our-menu-image">
                             <figure>
                               <img
-                                src="images/food-images/mediterranean-ground.jpg"
+                                src="images/food-images/beef-rice.jpg"
                                 alt=""
                               />
                             </figure>
@@ -699,15 +695,48 @@
                             <div class="menu-item-title">
                               <h3>Mediterranean Beef Press</h3>
                               <hr />
-                              <span>$9.99</span>
+                              <span>$11.99</span>
+                            </div>
+                            <!-- Menu Item Title End -->
+
+                            <!-- Menu Item Content Start -->
+                            <div class="menu-item-content">
+                              <p>Juicy beef with rice and bold spices.</p>
+                            </div>
+                            <!-- Menu Item Content End -->
+                          </div>
+                          <!-- Menu Item Body End -->
+                        </div>
+                        <!-- Our Menu Item End -->
+
+                        <!-- Our Menu Item Start -->
+                        <div class="our-menu-item">
+                          <!-- Our Menu Image Start -->
+                          <div class="our-menu-image">
+                            <figure>
+                              <img
+                                src="images/food-images/Paneer-rice.jpg"
+                                alt=""
+                              />
+                            </figure>
+                          </div>
+                          <!-- Our Menu Image End -->
+
+                          <!-- Menu Item Body Start -->
+                          <div class="menu-item-body">
+                            <!-- Menu Item Title Start -->
+                            <div class="menu-item-title">
+                              <h3>Royale Paneer</h3>
+                              <hr />
+                              <span>$11.99</span>
                             </div>
                             <!-- Menu Item Title End -->
 
                             <!-- Menu Item Content Start -->
                             <div class="menu-item-content">
                               <p>
-                                Juicy beef layered with Mediterranean spices,
-                                veggies, and cheese pressed to perfection.
+                                Delicious paneer cubes layered with rice and
+                                sauces.
                               </p>
                             </div>
                             <!-- Menu Item Content End -->
@@ -722,7 +751,7 @@
                           <div class="our-menu-image">
                             <figure>
                               <img
-                                src="images/food-images/c4b156d89340a904206c1fa8484167f8.jpg"
+                                src="images/food-images/falafel-over-rice.jpg"
                                 alt=""
                               />
                             </figure>
@@ -735,15 +764,15 @@
                             <div class="menu-item-title">
                               <h3>Falafel Crunch</h3>
                               <hr />
-                              <span>$9.99</span>
+                              <span>$11.99</span>
                             </div>
                             <!-- Menu Item Title End -->
 
                             <!-- Menu Item Content Start -->
                             <div class="menu-item-content">
                               <p>
-                                A vegetarian favorite with crispy falafel, fresh
-                                veggies, and zesty sauces.
+                                A wholesome veggie bowl with falafel, rice, and
+                                fresh toppings.
                               </p>
                             </div>
                             <!-- Menu Item Content End -->
@@ -758,7 +787,7 @@
                           <div class="our-menu-image">
                             <figure>
                               <img
-                                src="images/food-images/paneer-royal.jpg"
+                                src="images/food-images/combo-over-rice.jpg"
                                 alt=""
                               />
                             </figure>
@@ -769,51 +798,17 @@
                           <div class="menu-item-body">
                             <!-- Menu Item Title Start -->
                             <div class="menu-item-title">
-                              <h3>Paneer Royale</h3>
+                              <h3>Combo</h3>
                               <hr />
-                              <span>$9.99</span>
+                              <span>$11.99</span>
                             </div>
                             <!-- Menu Item Title End -->
 
                             <!-- Menu Item Content Start -->
                             <div class="menu-item-content">
                               <p>
-                                Grilled paneer with a rich blend of Indian
-                                spices and cheese.
+                                The best of both worlds in one filling bowl.
                               </p>
-                            </div>
-                            <!-- Menu Item Content End -->
-                          </div>
-                          <!-- Menu Item Body End -->
-                        </div>
-                        <!-- Our Menu Item End -->
-
-                        <!-- Our Menu Item Start -->
-                        <div class="our-menu-item">
-                          <!-- Our Menu Image Start -->
-                          <div class="our-menu-image">
-                            <figure>
-                              <img
-                                src="images/food-images/mix-panini.jpg"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <!-- Our Menu Image End -->
-
-                          <!-- Menu Item Body Start -->
-                          <div class="menu-item-body">
-                            <!-- Menu Item Title Start -->
-                            <div class="menu-item-title">
-                              <h3>Mix Panini</h3>
-                              <hr />
-                              <span>$9.99</span>
-                            </div>
-                            <!-- Menu Item Title End -->
-
-                            <!-- Menu Item Content Start -->
-                            <div class="menu-item-content">
-                              <p>A tasty combination of flavors in one bite.</p>
                             </div>
                             <!-- Menu Item Content End -->
                           </div>
@@ -828,7 +823,7 @@
                 <!-- Menu Item End -->
 
                 <!-- Menu Item Start -->
-                <div class="tab-pane fade" id="maincourses" role="tabpanel">
+                <div class="tab-pane fade" id="rolls" role="tabpanel">
                   <div class="row align-items-center">
                     <div class="col-lg-12">
                       <!-- Our Menu List Start -->
@@ -993,7 +988,11 @@
                 <!-- Approch Item End -->
 
                 <!-- Menu Item Start -->
-                <div class="tab-pane fade" id="sides" role="tabpanel">
+                <div
+                  class="tab-pane fade "
+                  id="sides"
+                  role="tabpanel"
+                >
                   <div class="row align-items-center">
                     <div class="col-lg-12">
                       <!-- Our Menu List Start -->
@@ -1363,22 +1362,86 @@
                     </div>
                   </div>
                 </div>
+                <div class="tab-pane fade" id="chefspecial" role="tabpanel">
+                  <div class="row align-items-center">
+                    <div class="col-lg-12">
+                      <!-- Our Menu List Start -->
+                      <div class="our-menu-list">
+                        <!-- Our Menu Item Start -->
+                        <div class="our-menu-item">
+                          <!-- Our Menu Image Start -->
+                          <div class="our-menu-image">
+                            <figure>
+                              <img
+                                src="images/food-images/butter-chicken.jpg"
+                                alt=""
+                              />
+                            </figure>
+                          </div>
+                          <!-- Our Menu Image End -->
+
+                          <!-- Menu Item Body Start -->
+                          <div class="menu-item-body">
+                            <!-- Menu Item Title Start -->
+                            <div class="menu-item-title">
+                              <h3>Butter Chicken</h3>
+                              <hr />
+                              <span>$10.99</span>
+                            </div>
+                            <!-- Menu Item Title End -->
+
+                            <!-- Menu Item Content Start -->
+                            <div class="menu-item-content">
+                              <p>Served with Basmati Rice</p>
+                            </div>
+                            <!-- Menu Item Content End -->
+                          </div>
+                          <!-- Menu Item Body End -->
+                        </div>
+                        <!-- Our Menu Item End -->
+
+                        <!-- Our Menu Item Start -->
+                        <div class="our-menu-item">
+                          <!-- Our Menu Image Start -->
+                          <div class="our-menu-image">
+                            <figure>
+                              <img
+                                src="images/food-images/butter-paneer.jpg"
+                                alt=""
+                              />
+                            </figure>
+                          </div>
+                          <!-- Our Menu Image End -->
+
+                          <!-- Menu Item Body Start -->
+                          <div class="menu-item-body">
+                            <!-- Menu Item Title Start -->
+                            <div class="menu-item-title">
+                              <h3>Butter Paneer</h3>
+                              <hr />
+                              <span>$10.99</span>
+                            </div>
+                            <!-- Menu Item Title End -->
+
+                            <!-- Menu Item Content Start -->
+                            <div class="menu-item-content">
+                              <p>Served with Basmati Rice</p>
+                            </div>
+                            <!-- Menu Item Content End -->
+                          </div>
+                          <!-- Menu Item Body End -->
+                        </div>
+                        <!-- Our Menu Item End -->
+                      </div>
+                      <!-- Our Menu List End -->
+                    </div>
+                  </div>
+                </div>
                 <!-- Approch Item End -->
               </div>
               <!-- Approch Box End -->
             </div>
             <!-- Our Approch Tab End -->
-          </div>
-
-          <div class="col-lg-12">
-            <!-- Section Footer Text Start -->
-            <div class="section-footer-text wow fadeInUp" data-wow-delay="0.4s">
-              <p>
-                Ready to Savor the Best?
-                <a href="menu-2.html">Check Our Dishes!</a>
-              </p>
-            </div>
-            <!-- Section Footer Text End -->
           </div>
         </div>
       </div>
@@ -1506,7 +1569,10 @@
               </div>
               <!-- Our Ingredients List End -->
 
-              <div class="about-button header-btn wow fadeInUp" data-wow-delay="0.6s">
+              <div
+                class="about-button header-btn wow fadeInUp"
+                data-wow-delay="0.6s"
+              >
                 <a href="contact.html" class="btn-default">
                   Order online with <img src='images/DoorDash_Logo.png'
                   id="door-dash-img" alt=door-dash"" />
@@ -1712,10 +1778,12 @@
 
                   <div class="col-lg-12">
                     <div class="reserve-table-btn">
-                      <button type="submit" class="btn-default">
-                        reserve now
+                      <button type="submit" class="btn-default" id="reserveBtn">
+                        <span class="btn-text">Submit query</span>
+                        <span class="btn-loader" style="display: none">
+                          <i class="fa fa-spinner fa-spin"></i> Sending...
+                        </span>
                       </button>
-                      <div id="msgSubmit" class="h3 hidden"></div>
                     </div>
                   </div>
                 </div>
@@ -1726,6 +1794,7 @@
         </div>
       </div>
     </div>
+    <div id="toast"></div>
     <!-- Reserve Table Section End -->
 
     <!-- Main Footer Section Start -->
