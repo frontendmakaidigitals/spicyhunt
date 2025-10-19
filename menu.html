@@ -192,8 +192,6 @@
               </div>
               <!-- Special Menu Item End -->
 
-
-
               <!-- Special Menu Item Start -->
               <div
                 class="special-menu-item swiper-slide wow fadeInUp"
@@ -599,10 +597,11 @@
                     <div class="menu-item-title">
                       <h3>Wings</h3>
                       <hr />
-                      <span
-                      class="multi-price"
-                        >4pc - $7.99 <br /> 6pc - $10.99 <br /> 9pc - $14.99 <br /> 12pc -
-                        $18.99</span
+                      <span class="multi-price"
+                        >4pc - $7.99 <br />
+                        6pc - $10.99 <br />
+                        9pc - $14.99 <br />
+                        12pc - $18.99</span
                       >
                     </div>
                     <!-- Menu Item Title End -->
@@ -663,7 +662,11 @@
                     <div class="menu-item-title">
                       <h3>Tenders</h3>
                       <hr />
-                      <span class="multi-price">4pc - $5.99 <br /> 5pc - $13.99 <br /> 8pc - $20.99</span>
+                      <span class="multi-price"
+                        >4pc - $5.99 <br />
+                        5pc - $13.99 <br />
+                        8pc - $20.99</span
+                      >
                     </div>
                     <!-- Menu Item Title End -->
 
@@ -834,7 +837,10 @@
                   <!-- Our Menu Image Start -->
                   <div class="our-menu-image">
                     <figure>
-                      <img src="images/food-images/tres-le-chas-cake.jpg" alt="" />
+                      <img
+                        src="images/food-images/tres-le-chas-cake.jpg"
+                        alt=""
+                      />
                     </figure>
                   </div>
                   <!-- Our Menu Image End -->
@@ -1007,8 +1013,7 @@
                     <div class="menu-item-title">
                       <h3>Falafel</h3>
                       <hr />
-                      <span
-                      class="multi-price"
+                      <span class="multi-price"
                         >3pc - $2.99 <br />
                         6pc - $4.99 <br />
                         8pc - $7.99</span
@@ -1797,20 +1802,29 @@
         const prevEl = container?.querySelector(".menu-btn-prev");
         const nextEl = container?.querySelector(".menu-btn-next");
 
-        new Swiper(container, {
+        const swiper = new Swiper(container, {
           slidesPerView: 5,
           spaceBetween: 30,
           grabCursor: true,
+          centeredSlides: false, // default for desktop
           navigation: {
             prevEl: prevEl,
             nextEl: nextEl,
           },
-          // disable loop so Swiper can detect ends
           loop: false,
           breakpoints: {
-            0: { slidesPerView: 1.2 },
-            576: { slidesPerView: 2 },
-            992: { slidesPerView: 5 },
+            0: {
+              slidesPerView: 3,
+              centeredSlides: true, // 👈 Center slide only on mobile
+            },
+            576: {
+              slidesPerView: 3,
+              centeredSlides: true, // 👈 Still center on small tablets
+            },
+            992: {
+              slidesPerView: 5,
+              centeredSlides: false, // 👈 Disable centering on desktop
+            },
           },
           on: {
             afterInit(swiper) {

@@ -4265,7 +4265,7 @@ header.main-header .header-sticky.active {
   .main-menu ul li.highlighted-menu {
     display: block;
   }
-
+  
   .slicknav_nav li,
   .slicknav_nav ul {
     display: block;
@@ -6060,4 +6060,22 @@ header.main-header .header-sticky.active {
   min-width: 150px;
   line-height: 1.6;
   
+}
+
+
+@media (max-width: 480px) {
+  .multi-price {
+    min-width: 100px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* Medium devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  .multi-price {
+    min-width: 120px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
