@@ -252,7 +252,81 @@
       </div>
     </div>
     <!-- Page Contact Us End -->
+    <div class="overlay" id="orderPopup" onclick="closePopupOnOverlay(event)">
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()">✕</button>
 
+        <div class="popup-header">
+          <h2>Order Now</h2>
+          <p>Choose your preferred way to order</p>
+        </div>
+
+        <div class="order-options">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/19894736228?text=Hi!%20I'd%20like%20to%20place%20an%20order"
+            class="order-option whatsapp disabled"
+            target="_blank"
+          >
+            <div class="option-icon">
+              <img src="images/whatsapp.png" alt="whatsapp-icon" />
+            </div>
+            <div class="option-content">
+              <div class="option-title">WhatsApp</div>
+              <div class="option-desc">Coming soon</div>
+            </div>
+            <div class="option-arrow">→</div>
+          </a>
+
+          <!-- DoorDash -->
+          <a
+            href="https://www.doordash.com/store/your-restaurant"
+            class="order-option doordash disabled"
+            target="_blank"
+          >
+            <div class="option-icon">
+              <img src="images/door-dash-rounded.png" alt="door-dash" />
+            </div>
+            <div class="option-content">
+              <div class="option-title">DoorDash</div>
+              <div class="option-desc">Coming soon</div>
+            </div>
+            <div class="option-arrow">→</div>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:info@flavorsstreet.com?subject=Order%20Inquiry"
+            class="order-option email"
+          >
+            <div class="option-icon">
+              <img src="/images/gmail.png" alt="email-icon" />
+            </div>
+            <div class="option-content">
+              <div class="option-title">Email</div>
+              <div class="option-desc">Send us your order</div>
+            </div>
+            <div class="option-arrow">→</div>
+          </a>
+
+          <!-- Call -->
+          <a href="tel:+1 (989) 473-6228" class="order-option call">
+            <div class="option-icon">
+              <img src="images/phone-call.png" alt="phone-icon" />
+            </div>
+            <div class="option-content">
+              <div class="option-title">Call Us</div>
+              <div class="option-desc">+1 (989) 473-6228</div>
+            </div>
+            <div class="option-arrow">→</div>
+          </a>
+        </div>
+
+        <div class="popup-footer">
+          <p>Available Mon-Sun • 11:00 AM - 10:00 PM</p>
+        </div>
+      </div>
+    </div>
     <!-- Google Map Start -->
     <div class="google-map">
       <div class="container-fluid">
@@ -536,7 +610,47 @@
       </div>
     </footer>
     <!-- Main Footer Section End -->
+    <script>
+      let popupVisible = false;
 
+      function openPopup() {
+        if (popupVisible) return;
+        document.getElementById("orderPopup").classList.add("active");
+        document.body.style.overflow = "hidden";
+        popupVisible = true;
+      }
+
+      function closePopup() {
+        document.getElementById("orderPopup").classList.remove("active");
+        document.body.style.overflow = "";
+        popupVisible = false;
+      }
+
+      function closePopupOnOverlay(event) {
+        if (event.target === document.getElementById("orderPopup")) {
+          closePopup();
+        }
+      }
+
+      // Close on ESC
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closePopup();
+        }
+      });
+
+      // Show popup when page loads
+      window.addEventListener("load", function () {
+        openPopup();
+
+        // Show popup every 10 seconds
+        setInterval(function () {
+          if (!popupVisible) {
+            openPopup();
+          }
+        }, 15000); // 10 seconds (10000 ms)
+      });
+    </script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
