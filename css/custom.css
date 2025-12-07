@@ -5964,6 +5964,7 @@ header.main-header .header-sticky.active {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
+  gap:10px
 }
 
 .view-detailed-menu button {
@@ -6429,4 +6430,14 @@ header.main-header .header-sticky.active {
   pointer-events: none; /* disables clicking */
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+
+#popupImage {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+#popupImage.zoomed {
+  cursor: zoom-out;
 }
