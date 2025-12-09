@@ -1492,6 +1492,32 @@
           </div>
 
           <div class="order-options">
+            <!-- Email -->
+            <a
+              href="mailto:info@flavorsstreet.com?subject=Order%20Inquiry"
+              class="order-option email"
+            >
+              <div class="option-icon">
+                <img src="/images/gmail.png" alt="email-icon" />
+              </div>
+              <div class="option-content">
+                <div class="option-title">Email</div>
+                <div class="option-desc">Send us your order</div>
+              </div>
+              <div class="option-arrow">→</div>
+            </a>
+
+            <!-- Call -->
+            <a href="tel:+1 (989) 473-6228" class="order-option call">
+              <div class="option-icon">
+                <img src="images/phone-call.png" alt="phone-icon" />
+              </div>
+              <div class="option-content">
+                <div class="option-title">Call Us</div>
+                <div class="option-desc">+1 (989) 473-6228</div>
+              </div>
+              <div class="option-arrow">→</div>
+            </a>
             <!-- WhatsApp -->
             <a
               href="https://wa.me/19894736228?text=Hi!%20I'd%20like%20to%20place%20an%20order"
@@ -1520,33 +1546,6 @@
               <div class="option-content">
                 <div class="option-title">DoorDash</div>
                 <div class="option-desc">Coming soon</div>
-              </div>
-              <div class="option-arrow">→</div>
-            </a>
-
-            <!-- Email -->
-            <a
-              href="mailto:flavorsstreet@yahoo.com?subject=Order%20Inquiry"
-              class="order-option email"
-            >
-              <div class="option-icon">
-                <img src="/images/gmail.png" alt="email-icon" />
-              </div>
-              <div class="option-content">
-                <div class="option-title">Email</div>
-                <div class="option-desc">Send us your order</div>
-              </div>
-              <div class="option-arrow">→</div>
-            </a>
-
-            <!-- Call -->
-            <a href="tel:+1 (989) 473-6228" class="order-option call">
-              <div class="option-icon">
-                <img src="images/phone-call.png" alt="phone-icon" />
-              </div>
-              <div class="option-content">
-                <div class="option-title">Call Us</div>
-                <div class="option-desc">+1 (989) 473-6228</div>
               </div>
               <div class="option-arrow">→</div>
             </a>
@@ -2030,11 +2029,13 @@
         popupVisible = false;
       }
 
-      function closePopupOnOverlay(event) {
-        if (event.target === document.getElementById("orderPopup")) {
-          closeOrderPopup();
-        }
-      }
+      // Attach click events to ALL buttons with class openPopupBtn
+      document.querySelectorAll(".openPopupBtn").forEach(function (btn) {
+        btn.addEventListener("click", openOrderPopup);
+      });
+
+      // Auto-open on page load
+      window.addEventListener("load", openOrderPopup);
 
       // Close on ESC
       document.addEventListener("keydown", function (event) {
@@ -2042,18 +2043,6 @@
           closeOrderPopup();
         }
       });
-
-      // Show popup when page loads
-      window.addEventListener("load", function () {
-        openOrderPopup(); // open immediately on load
-      });
-
-      // Button click example:
-      document
-        .getElementById("openPopupBtn")
-        .addEventListener("click", function () {
-          openOrderPopup(); // opens when button is clicked
-        });
     </script>
 
     <!-- Google Translate Widget (Hidden) -->
