@@ -481,19 +481,19 @@ header.main-header .header-sticky.active {
   padding: 16px 0;
   align-items: center;
 }
- 
+
 .nav-button .header-btn a {
-  white-space: nowrap;        /* prevents text from breaking into 2 lines */
-  padding: .4rem 0px;         /* balanced padding */
-  display: inline-flex;       /* centers text better */
+  white-space: nowrap; /* prevents text from breaking into 2 lines */
+  padding: 0.4rem 0px; /* balanced padding */
+  display: inline-flex; /* centers text better */
   align-items: center;
   justify-content: center;
-  border-radius: 40px;        /* keep your pill shape */
+  border-radius: 40px; /* keep your pill shape */
   font-weight: 600;
 }
-.nav-button .btn-default{
+.nav-button .btn-default {
   height: auto !important;
-  gap:4px !important
+  gap: 4px !important;
 }
 .navbar-brand {
   padding: 0;
@@ -5964,7 +5964,7 @@ header.main-header .header-sticky.active {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
-  gap:10px
+  gap: 10px;
 }
 
 .view-detailed-menu button {
@@ -6261,9 +6261,9 @@ header.main-header .header-sticky.active {
   flex-shrink: 0;
 }
 
- .main-dish-btn.mt{
+.main-dish-btn.mt {
   margin-top: 48px !important;
- }
+}
 .option-content {
   flex: 1;
 }
@@ -6352,11 +6352,11 @@ header.main-header .header-sticky.active {
   position: relative;
   z-index: 2;
 }
-.main-dish-btn{
+.main-dish-btn {
   display: flex !important;
   width: 100%;
   justify-content: center;
-  margin-top: 14px ;
+  margin-top: 14px;
 }
 
 .call-btn::before,
@@ -6420,18 +6420,16 @@ header.main-header .header-sticky.active {
   }
 }
 
-.option-icon img{
+.option-icon img {
   width: 100%;
   height: 100%;
 }
-
 
 .order-option.disabled {
   pointer-events: none; /* disables clicking */
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 
 #popupImage {
   transition: transform 0.3s ease;
@@ -6440,4 +6438,24 @@ header.main-header .header-sticky.active {
 
 #popupImage.zoomed {
   cursor: zoom-out;
+}
+
+ 
+
+.image-anime img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;    /* fills thumbnail and removes shadow */
+}
+
+.img-1 img {
+    object-position: 35% 40% !important;
+}
+
+.img-2 img {
+    object-position: 62% 40% !important;
+}
+
+.img-3 img {
+    object-position: 35% 40% !important;
 }
