@@ -6459,3 +6459,8 @@ header.main-header .header-sticky.active {
 .img-3 img {
     object-position: 35% 40% !important;
 }
+
+
+.main-footer.contact{
+  padding-top: 55px;
+}
